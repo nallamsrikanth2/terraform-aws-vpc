@@ -17,7 +17,7 @@ output "public_subnet_cidrs_ids" {
 
 
 output "private_subnet_cidrs_ids" {
-    value = aws_subnet.private.private[*].id
+    value = aws_subnet.private[*].id
   
 }
 
