@@ -26,6 +26,11 @@ output "database_subnet_ids" {
   
 }
 
+output "database_subnet_group" {
+    value = aws_db_subnet_group.default[*].id
+  
+}
+
 output "igw_id" {
     value = aws_internet_gateway.igw.id
   
